@@ -1,2 +1,3 @@
 # hotdogs-challenge
-I found a random hotdog's company website and I'll try to make something similar with HTML and CSS in one evening.
+I'm trying to remake a webpage that I chose by searching for hotdogs and opening a random link.
+Original site: https://www.hillbillyhotdogs.com/
