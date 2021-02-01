@@ -1,0 +1,63 @@
+:root{
+    --clr-text: #fff;
+    --clr-primary:#000;
+    --clr-accent: #ffcd05;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    background-color: var(--clr-primary);
+    text-align: center;
+}
+
+img{
+    width: 3em;
+}
+
+/* Text */
+
+p{
+    font-family: "Acme", sans-serif;
+    color: var(--clr-text);
+    margin-bottom: 0.85em;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3{
+    font-family: 'Potta One', cursive;
+    color: var(--clr-accent);
+}
+
+.nav-btn, .footer-nav-btn{
+    font-family: 'Shadows Into Light', cursive;
+    color: var(--clr-accent);
+    font-size: 1.5rem;
+}
+
+p, h1, h2, h3, h4{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* Template styles */
+
+/* Navigation */
+
+/* Footer */
+
+
+
