@@ -12,74 +12,94 @@
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a class="logo" href="index.html"><img src="images/logo.gif" alt="Logo"></a></li>
-            <li><a href="index.html" class="nav-btn">Home</a></li>
-            <li><a href="grub.html" class="nav-btn">Grub</a></li>
-            <li><a href="hillbillyland.html" class="nav-btn">HillbillyLand</a></li>
-            <li><a href="contact.html" class="nav-btn">Contact</a></li>
-            <li><a href="shop.html" class="nav-btn">Shop</a></li>
-            <li><a href="order.html" class="nav-btn border-red">Order Online</a></li>
-            <li><a href="shopping-cart.html" class="nav-btn"><img src="images/cart-orange.png" alt="Cart"></a></li>
-        </ul>
+        <a class="logo" href="index.html"><img src="images/logo.gif" alt="Logo"></a>
+        <div class="nav-empty">
+            <ul>
+                <li><a href="index.html" class="nav-btn">Home</a></li>
+                <li><a href="grub.html" class="nav-btn">Grub</a></li>
+                <li><a href="hillbillyland.html" class="nav-btn">HillbillyLand</a></li>
+                <li><a href="contact.html" class="nav-btn">Contact</a></li>
+                <li><a href="shop.html" class="nav-btn" aria-label="Cart">Shop</a></li>
+                <li><a href="order.html" class="nav-btn border-red">Order Online</a></li>     
+                <li><a href="shopping-cart.html" class="cart"><img src="images/cart-orange.png" alt="Cart"></a></li>  
+            </ul>
+        </div>
+        <a href="shopping-cart.html" class="grid-item"><img src="images/cart-orange.png" alt="Cart"></a>
+        <label for="nav-toggle" class="grid-item"><img src="images/menu-orange.png" alt="Menu"></label>
     </nav>
-    <footer class="footer">
-        <div class="footer-section">
-            <img src="images/logo.gif" alt="Logo">
-        </div>
-        <div class="footer-section">
-            <h3 class="footer-title">Our Hours</h3>
-            <ul>
-                <li class="work-times">
-                    <p>Monday</p>
-                </li>
-                <li class="work-times">
-                    <p>11am - 4pm</p>
-                </li>
-                <li class="work-times">
-                    <p>Tuesday & Wednesday</p>
-                </li>
-                <li class="work-times">
-                    <p>Closed</p>
-                </li>
-                <li class="work-times">
-                    <p>Thursday - Sunday</p>
-                </li>
-                <li class="work-times">
-                    <p>11am - 4pm</p>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3 class="footer-title">Navigation</h3>
-            <ul>
-                <li class="footer-nav-btn"><a href="index.html"></a>Home</li>
-                <li class="footer-nav-btn"><a href="grub.html"></a>Menu</li>
-                <li class="footer-nav-btn"><a href="order.html"></a>Order Online</li>
-                <li class="footer-nav-btn"><a href="contact.html"></a>Contact</li>
-                <li class="footer-nav-btn"><a href="shop.html"></a>Shop</li>
-            </ul>
-        </div>
-        <div class="footer-section">
-            <h3 class="footer-title">Contact Us</h3>
-            <p>6951 Ohio River Road</p>
-            <p>Lesage, WV 25537</p>
-            <a href="" class="footer-nav-btn">(304)762-2458</a>
-            <a href="" class="footer-nav-btn">Weenies@HillbillyHotDogs.com</a>
+    <div class="fill"></div>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="nav-menu">
+        <ul>
+            <li><a href="index.html" class="nav-btn-black">Home</a></li>
+            <li><a href="grub.html" class="nav-btn-black">Grub</a></li>
+            <li><a href="hillbillyland.html" class="nav-btn-black">HillbillyLand</a></li>
+            <li><a href="contact.html" class="nav-btn-black">Contact</a></li>
+            <li><a href="shop.html" class="nav-btn-black" aria-label="Cart">Shop</a></li>
+            <li><a href="order.html" class="nav-btn-black">Order Online</a></li>        
+        </ul>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="footer-section" id="footer-logo">
+                <img class="footer-logo" src="images/logo.gif" alt="Logo">
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Our Hours</h3>
+                <ul>
+                    <li class="work-times">
+                        <p>Monday</p>
+                    </li>
+                    <li class="work-times">
+                        <p>11am - 4pm</p>
+                    </li>
+                    <li class="work-times">
+                        <p>Tuesday & Wednesday</p>
+                    </li>
+                    <li class="work-times">
+                        <p>Closed</p>
+                    </li>
+                    <li class="work-times">
+                        <p>Thursday - Sunday</p>
+                    </li>
+                    <li class="work-times">
+                        <p>11am - 4pm</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Navigation</h3>
+                <ul>
+                    <li><a class="footer-nav-btn" href="index.html">Home</a></li>
+                    <li><a class="footer-nav-btn" href="grub.html">Menu</a></li>
+                    <li><a class="footer-nav-btn" href="shop.html">Shop</a></li>
+                    <li><a class="footer-nav-btn" href="order.html">Order Online</a></li>
+                    <li><a class="footer-nav-btn" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3 class="footer-title">Contact Us</h3>
+                <p>6951 Ohio River Road</p>
+                <p>Lesage, WV 25537</p>
+                <ul>
+                    <li><a href="tel:304-762-2458" class="footer-nav-btn">(304)762-2458</a></li>
+                    <li><a href="Weenies@HillbillyHotDogs.com" class="footer-nav-btn">Weenies@HillbillyHotDogs.com</a></li> 
+                </ul>
+            </div>
         </div>
         <hr>
-        <div class="footer-section">
+        <div class="bottom">
             <p>© 2020 Hillbilly Hotdogs. All Rights Reserved. </p>
-        </div>
-        <div class="nav-social">
-            <ul>
-                <li class="social-link"><a href="http://www.facebook.com/hillbillyhotdogs" aria-label="facebook"><img src="images/facebook.png" alt="FB logo"></a></li>
-                <li class="social-link"><a href="https://www.instagram.com/squarespace/" aria-label="instagram"><img src="images/instagram.png" alt="IG logo"></a></li>
-                <li class="social-link"><a href="http://www.twitter.com/gottheweenies" aria-label="twitter"><img src="images/twitter.png" alt="TW logo"></a></li>
-                <li class="social-link"><a href="https://hillbillyhotdogs.tumblr.com/" aria-label="tumblr"><img src="images/tumblr.png" alt="Tumblr logo"></a></li>
-                <li class="social-link"><a href="http://www.yelp.com/biz/hillbilly-hot-dogs-lesage?osq=hillbilly+hotdogs" aria-label="yelp"><img src="images/yelp.png" alt="Yelp logo"></a></li>
-                <li class="social-link"><a href="https://www.tripadvisor.com/Restaurant_Review-g59246-d810536-Reviews-Hillbilly_Hot_Dogs-Lesage_West_Virginia.html" aria-label="tripadvisor"><img src="images/tripadvisor.png" alt="Tripadvisor logo"></a></li>
-            </ul>
+            <div class="nav-social">
+                <ul>
+                    <li class="social-link"><a href="http://www.facebook.com/hillbillyhotdogs" aria-label="facebook"><img src="images/facebook.png" alt="FB logo"></a></li>
+                    <li class="social-link"><a href="https://www.instagram.com/squarespace/" aria-label="instagram"><img src="images/instagram.png" alt="IG logo"></a></li>
+                    <li class="social-link"><a href="http://www.twitter.com/gottheweenies" aria-label="twitter"><img src="images/twitter.png" alt="TW logo"></a></li>
+                    <li class="social-link"><a href="https://hillbillyhotdogs.tumblr.com/" aria-label="tumblr"><img src="images/tumblr.png" alt="Tumblr logo"></a></li>
+                    <li class="social-link"><a href="http://www.yelp.com/biz/hillbilly-hot-dogs-lesage?osq=hillbilly+hotdogs" aria-label="yelp"><img src="images/yelp.png" alt="Yelp logo"></a></li>
+                    <li class="social-link"><a href="https://www.tripadvisor.com/Restaurant_Review-g59246-d810536-Reviews-Hillbilly_Hot_Dogs-Lesage_West_Virginia.html" aria-label="tripadvisor"><img src="images/tripadvisor.png" alt="Tripadvisor logo"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
     
