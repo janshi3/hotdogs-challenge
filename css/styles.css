@@ -10,6 +10,10 @@
     box-sizing: inherit;
 }
 
+.tilted-img{
+    transform: rotate(5deg);
+}
+
 html{
     box-sizing: border-box;
     background-color: var(--clr-primary);
@@ -49,7 +53,7 @@ h1, h2, h3{
     margin-bottom: 0.4em;
 }
 
-.nav-btn, .footer-nav-btn{
+.nav-btn, .footer-nav-btn, .btn{
     font-family: 'Shadows Into Light', cursive;
     color: var(--clr-accent);
     text-decoration: none;
@@ -121,12 +125,14 @@ nav label{
 }
 
 .nav-toggle:checked ~ .nav-menu ul{
-    display: flex;
+    opacity: 1;
+    transition: opacity 400ms ease-in-out;
 }
 
 .nav-menu ul{
-    display: none;
-    /* display: flex; */
+    opacity: 0;
+    transition: opacity 400ms ease-in-out;
+    display: flex;
     position: fixed;
     width: 100%;
     height: 100%;
@@ -134,12 +140,13 @@ nav label{
     align-items: center;
     justify-content: space-evenly;
     flex-direction: column;
-    padding-bottom: 7em
+    padding-bottom: 7em;
+    z-index: 999;
 }
 
-.nav-menu 
 
 /* Footer */
+
 .footer-section{
     padding: 1em;
 }
@@ -218,7 +225,8 @@ hr{
 
     .bottom{
         display: grid;
-        grid-auto-flow: column
+        grid-auto-flow: column;
+        margin-bottom: 1em;
     }
 
     .bottom p{
@@ -234,3 +242,171 @@ hr{
         grid-column: 25/50;
     }
 }
+
+/* Homepage */
+
+.homepage-section, .homepage-section-10padding img{
+    padding: 2em;
+    padding-bottom: 4em;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.homepage-section img, .homepage-section-10padding img{
+    max-width: 100%;
+}
+
+h1{
+    display:inline-block;
+    padding: .2em;
+    font-size: 3rem;
+    background-color: var(--clr-primary);
+    margin-top: .8em;
+    margin-bottom: 1em;
+}
+
+h2{
+    display:inline-block;
+    padding: .2em;
+    font-size: 2.5rem;
+    background-color: var(--clr-primary);
+    margin-top: .8em;
+    margin-bottom: 1em;
+}
+
+.wood-bg{
+    background-image: url(../images/wood.jpg);
+}
+
+.input-btn{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: .5em;
+    margin: 0.3em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.primary{
+    background-color: var(--clr-primary);
+}
+
+.accent{
+    background-color: var(--clr-accent);
+}
+
+.text-accent{
+    color: var(--clr-accent);
+}
+
+.text-white{
+    color: white;
+}
+
+.price{
+    float: right;
+}
+
+.hotdogs{
+    margin-bottom: 2.5em;
+}
+
+.order-online{
+    background-color: var(--clr-accent);
+    padding: 1em;
+}
+
+.order-online p{
+    color: var(--clr-primary);
+    padding-bottom: .5em;
+}
+
+/* Hover / Focus */
+
+.primary:hover{
+    background-color: rgb(49, 42, 42);
+}
+
+.accent:hover{
+    background-color: #c5a41e;
+}
+
+.input-btn:focus, .social-link:focus, cart:focus{
+    border: 2px solid white;
+}
+
+.btn:hover, .nav-btn:hover, .nav-btn-black:hover, .footer-nav-btn:hover, 
+.btn:focus, .nav-btn:focus, .nav-btn-black:focus, .footer-nav-btn:focus{
+    text-decoration: underline;
+}
+
+/* For Wider Screens */
+
+@media screen and (min-width: 800px){
+
+    .flex{
+        display: flex;
+        justify-items: center;
+    }
+
+    .flex-justify-around{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .flex-justify-around img{
+        max-width: 50%;
+    }
+
+    .tilted-img{
+        margin-right: 3em;
+    }
+
+    .homepage-section{
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .homepage-section-10padding{
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-bottom: 2.5em;
+    }
+
+    .homepage-section-10padding p{
+        padding-top: 3.5em;
+    }
+
+    .grid{
+        display: grid;
+        grid-template-columns: auto 50%;
+        gap: 1em;
+        vertical-align: middle;
+    }
+
+    .grid h2, .grid .btn{
+        grid-column: 1/3;
+        text-align: center;
+    }
+
+    .margin{
+        margin: 1em;
+    }
+
+    .padding-top{
+        padding-top: 10em;
+    }
+
+    .order-online{
+        align-items: center;
+    }
+
+    .order-online .input-btn, .order-online p{
+        margin: 0;
+    }
+}
+
